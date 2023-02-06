@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <body>
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a style="color: orange;" class="navbar-brand" href="#"><img style="height: 60px;" src="data:image/jpeg;base64,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1XBfWMnU8tLVXg4MaupVsK+qKwWJYDkB85SLnxcbW6XyUg7HPjcd1HHuzs6R3V4uJgaZTyUqljDvFVQ4KwfM7n3SI0TK9F1HHLHau/fGs8PXI4SfI7TTqeZ6fm5GSAwRiFpVu1akHCoPt7z5zj59xIPcR2g+Im9dWK+F9TeqnFXBLrzJrpHidRnm5RsmWvW//oPVcft987eiP8rqP/B/bZOXUtVwNR0/GrYXDOqNbkmterLcPDYA3Fvse0cu6eNB1PC018xsnrj1vUcHVIrfyZcnfdh4zJxm6HFrcxlGctM4Nb8vkhm+k35TfaZaNJBPRzUwOZIz9gO36IMq5PNj4kn4neS2j6wNO62m6prMe1uP1CONH24SQG5EHvH/AIdb4OUNuhtqISlDw800yI5S0aaP9mdTJ7CMwg9xG6jcTP3T6IkknA5nmd8Ojv8AJ5y6nruPkYpwsChqqG4VsZwiEop3CIiEgDs35/8AfKcpW4io43MpyndiKi1unue+i1FNuRnPYis9a0JWXUNwdYz8RG/fyE3/AMZcLj4W04qvHwswetiF32J4eD9s4NA1PC018tsnriLeo4OpQP8AQLb77sPGQzHdmI7CxI953lnVx2SciXQrLZOfLbBctdzMvGwazhivqMkGt7034kVxuAgHIBhvz/15xPRnDXIzLb2d1GKK+AIxXiewkesV57AA8o0/VsJdPu07URc1RBSpqkVyEPMD1mHNTzX4d04tL1JtMyLHCm2mwcFq78LMAd1ZSd9iP2/Cka5RrlBLf+SkapxqlXFb+fmS13Sq9bbVqw6urR3Retss49lO3rcJA+U1P0qy3S1PRMccddlZIe7cB1K79vtnS2r9FbWNluCxsfm5fFoZifa3HznltT6I8L8OB6xRwv4JSNmKkA78cpGEF/bZSMILH9JlXiInoHpiIiSBERAMiIEQDEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREgCIiSBERAMiIEQDBBBIPaCQfMREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA9qjsNwO/btiIgtg//9k="></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Informations.</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Explor some plants</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Photos.
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Snow.</a></li>
+                    <li><a class="dropdown-item" href="#">Greenary.</a></li>
+                    <li><a class="dropdown-item" href="#">Desart.</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+       <header>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://wallpapercave.com/wp/wp2506833.jpg" class="d-block w-100" alt="else">
+            </div>
+            <div class="carousel-item">
+              <img src="https://hdqwalls.com/wallpapers/lake-ultra-hd-4k-7f.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://wallpapercave.com/wp/wp2506845.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+     <!-- About as section start -->
+     <section class="main_heading m-5">
+      <div class="">
+        <h1 class="display-4" align="center"><b>About us</b></h1>
+        <hr class="w-25 mx-auto">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+            <figure>
+              <img style="min-width: 100%; max-height: 280%;" src="https://www.learnreligions.com/thmb/-VmjnsLNdVAkCAazEFZFdDcrjHM=/6000x4000/filters:fill(auto,1)/himalaya-mountains-landscape-from-kalapattar-view-point-at-sunset--everest-region--nepal-864223704-5c7374c546e0fb0001835dc3.jpg" alt="about image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+            <h1 style="color: brown;">Information:-</h1>
+            <p><b>The Himalayas, or Himalaya (/ˌhɪməˈleɪ.ə, hɪˈmɑːləjə/; Sanskrit: [ɦɪmaːlɐjɐ]; from Sanskrit himá 'snow, frost', and ā-laya 'dwelling, abode'),[1] is a mountain range separating the plains of the Indian subcontinent from the Tibetan Plateau. The range has some of the planet's highest peaks, including the very highest, Mount Everest which lies on the border of China and Nepal. Over 100 peaks exceeding 7,200 m (23,600 ft) in elevation lie in the Himalayas. By contrast, the highest peak outside Asia (Aconcagua, in the Andes) is 6,961 m (22,838 ft) tall.[2]
+
+              The Himalayas abut or cross five countries: Bhutan, India, Nepal, China, and Pakistan. The Himalayan range is bordered on the northwest by the Karakoram and Hindu Kush ranges, on the north by the Tibetan Plateau, and on the south by the Indo-Gangetic Plain. Some of the world's major rivers, the Indus, the Ganges, and the Tsangpo–Brahmaputra, rise in the vicinity of the Himalayas, and their combined drainage basin is home to some 600 million people; 53 million people live in the Himalayas.[3] The Himalayas have profoundly shaped the cultures of South Asia and Tibet. Many Himalayan peaks are sacred in Hinduism, Jainism[4] and Buddhism; the summits of several—Kangchenjunga (from the Indian side), Gangkhar Puensum, Machapuchare, Nanda Devi and Kailas in the Tibetan Transhimalaya—are off-limits to climbers.
+              
+              Lifted by the subduction of the Indian tectonic plate under the Eurasian Plate, the Himalayan mountain range runs west-northwest to east-southeast in an arc 2,400 km (1,500 mi) long.[5] Its western anchor, Nanga Parbat, lies just south of the northernmost bend of the Indus river. Its eastern anchor, Namcha Barwa, lies immediately west of the great bend of the Yarlung Tsangpo River. The range varies in width from 350 km (220 mi) in the west to 150 km (93 mi) in the east.[6]</b></p>
+              <button type="button" class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Himalayas" target="_blank">Read more</a></button>
+            </div>
+        </div>
+      </div>
+     </section>
+     <!-- Service section -->
+     <section class="main_heading m-5 bg-dark pt-5">
+      <div class="">
+        <h1 style="color: orange;" class="display-4" align="center"><b>Explore flower plant.</b></h1>
+        <hr style="color: orange;" class="w-25 mx-auto">
+      </div>
+            <div class="container Explor some plant">
+              <div class="row">
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSN5EASbN3H3bhSR0yEg815ero9f6yPOi_rqvwq420LInBcWAxu8SHpiXTEiGK1QLorU6mcrpCEp5MobUM" class="img-fluid rounded-start" alt="flower">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">The Titan Arum (Amorphophuallus Titanum)</h5>
+                          <p class="card-text">Described as the mother of all flowers, this particular floral specie can grow to a massive three metres high.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlya0EIXsEF8DgLklGFZht3YWonuBNDkcGOA&usqp=CAU" class="img-fluid rounded-start" alt="flower">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">The generally flower</h5>
+                          <p class="card-text">There are generally 2 leaves per bulb, but occasionally 3. The leaves vary considerably in shape, size, colour and markings.They generally occur after flowering but may rarely occur simultaneously with the flower. </p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://preview.redd.it/4fxa619at0g51.jpg?auto=webp&s=8f4c337eb91302c9ac973317e218debd2a231be1" class="img-fluid rounded-start" alt="flower">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">The Purpal flower (sincs Titanum)</h5>
+                          <p class="card-text">Described as the mother of all flowers, this particular floral specie can grow to a massive three metres high.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-xxl-12 text-center my-5">
+                  <button type="button" class="btn btn-info"><a href="https://www.britannica.com/science/flower" target="_blank">Explore more</a></button>
+                </div>
+            </div>
+          </section>
+          <section class="main_heading m-5 bg-dark pt-5 ">
+            <div class="">
+              <h1 style="color: orange;" class="display-4" align="center"><b>Photos</b></h1>
+              <hr style="color: orange;" class="w-25 mx-auto">
+            </div>
+            <div class="container">
+              <div class="row gy-3 my-5">
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://i.guim.co.uk/img/media/918b6d4c733d0c298db6b6160c9c4f543eabc22c/0_0_3000_2206/master/3000.jpg?width=700&quality=85&auto=format&fit=max&s=a8d36ecee69ada764293638b82f8e764" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://sleeklens.com/wp-content/uploads/2017/11/DSC1290-Pano-1-copia-1.jpg" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://images.unsplash.com/photo-1622308644420-b20142dc993c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyamVlbGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://images.squarespace-cdn.com/content/v1/58e8c8dcbf629ae3d5a1ec6c/1496569629091-LUUCJK9E50G3WAW8ECHK/IMG_0185_riverlight_pictures_travel_photography.jpg" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://media.istockphoto.com/id/670688480/photo/green-tea-plantations-munnar-kerala-india.jpg?s=612x612&w=0&k=20&c=b09pbKjviHDfBg4sviMO5Pjwq_KhcpgsMHquKrLQBdU=" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://cdn.fstoppers.com/styles/full/s3/media/2022/08/16/red-planet.jpg" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://i.pinimg.com/originals/4e/94/7a/4e947afe00fb849dd5796dcf5f63d9e6.jpg" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                  <figure>
+                    <img src="https://i.pinimg.com/originals/82/ce/27/82ce2766e3dd81012c91bb640a729db0.jpg" alt="gallary" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </div>
+            </section>
+            <!-- content -->
+            <section class="main_heading m-5 bg-info pt-5 ">
+             <div class="container-fluid">
+              <div class="row">
+                     <div class="col-xxl-12 col-12 py-5 text-center">
+                      <h1><b>Check About Nature</b></h1>
+                      <p>Click this button and get Information about nature and our culcture.</p>
+                      <div class="col-xxl-12 text-center my-5">
+                        <button type="button" class="btn btn-outline-dark"><a href="https://youtu.be/3SsK-cxlj_w" target="_blank">Explore more</a></button></button>
+                      </div>
+                     </div>
+              </div>
+             </div>
+              </section>
+              <section class="main_heading m-5 bg-dark pt-5 ">
+                <div class="">
+                  <h1 style="color: orange;" class="display-4" align="center"><b>Contect Us</b></h1>
+                  <hr style="color: orange;" class="w-25 mx-auto">
+                </div>
+                <div class="container-flud">
+                  <div class="rows">
+                    <div class="col-xxl-8-col-10 col-md-8 mx-auto">
+                      <form>
+                        <div class="mb-3">
+                          <label style="color: orange;" for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label style="color: orange;" for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label style="color: orange;" class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Submit</button>
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
+                </section>
+                <!-- thank you -->
+                <section class="main_heading m-3 color-info pt-3 ">
+                  <div style="background-color: cadetblue;" class="text">
+                    <h1 style="color: black;" class="display-4" align="center"><b>Thank You</b></h1>
+                    <hr style="color: black;" class="w-25 mx-auto">
+                  </div>
+   </body>
+   </html>
